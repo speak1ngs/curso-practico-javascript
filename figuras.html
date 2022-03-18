@@ -9,6 +9,37 @@
 <body>
     <h1> Figuras geometricas</h1>
 
+    <p>Este es el primer taller del curso practico de JavaScript</p>
+    <section>
+        <h2>Calcula el area y el perimetro</h2>
+        <form action="">
+            <label for="InputCuadrado">Escribe cuanto mide cada de lado de tu cuadrado:</label>
+            <input id="InputCuadrado" type="number">
+            <button type="button" onclick="calcularPerimetroCuadrado()">Calcular perimetro</button>
+            <button type="button" onclick="calcularAreaCuadrado()">Calcular area</button>
+        </form>
+    </section>
+    <br>
+    
+    <section>
+          <form action="">
+            <label for="InputTriangulo">Escribe cuanto mide los lado de tu triangulo:</label>
+            <br>
+            <input id= "InputTriangulo" type="number">
+            <br>
+            <label for="InputTrianguloBase">Escribe cuanto mide la base de tu triangulo:</label>
+            <br>
+            <input id= "InputTrianguloBase" type="number">
+            <br>
+            <label for="InputTrianguloAltura">Escribe cuanto mide la altura de tu triangulo:</label>
+            <br>
+            <input id= "InputTrianguloAltura" type="number">
+            <br>
+            <button type="button" onclick="calcularPerimetroTriangulo()">Calcular perimetro</button>
+            <button type="button" onclick="calcularAreaTriangulo()">Calcular area</button>
+        </form>
+    </section>
+
     <script src="./figuras.js"></script>
 </body>
 </html>

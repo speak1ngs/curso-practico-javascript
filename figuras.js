@@ -2,7 +2,7 @@
 
 //console.group agrupo mensajes
 console.group("Cuadrados")
-
+/*
 var calculoFigura = prompt("Ingrese una figura si desea calcular o 0 para finalizar");
 while(calculoFigura !=0){
 
@@ -85,7 +85,7 @@ while(calculoFigura !=0){
                 alert("No ingreso figura a calcular");
                 calculoFigura = prompt("Ingrese una figura si desea calcular o 0 para finalizar");
             break;
-        }
+        }*/
 /*
 
 
@@ -135,6 +135,70 @@ const areaCirculo = PI * (radioCirculo^2);
 
 console.log("El area del circulo es : " + areaCirculo + " cm ^2");
 
-console.groupEnd();*/
+console.groupEnd();
 
+}*/
+
+// Aqui interanctuamos con el HTML
+  
+// cuadrado
+function perimetroCuadrado(ladosCuadrado){ 
+    return ladosCuadrado * 4 ;
 }
+
+function calcularPerimetroCuadrado(){
+    const input = document.getElementById("InputCuadrado");
+    const value = input.value;
+
+    const perimetro = perimetroCuadrado(value);
+
+    alert(perimetro)
+}
+
+function areaCuadrado(ladosCuadrado){
+    return ladosCuadrado * ladosCuadrado;
+}
+
+function calcularAreaCuadrado(){
+    const input = document.getElementById("InputCuadrado");
+    const value = input.value;
+
+    const perimetro = areaCuadrado(value);
+
+    alert(perimetro)
+}
+
+//triangulo
+function calcularPerimetroTriangulo(){
+    const input1 = document.getElementById("InputTriangulo");
+    const value = input1.value;
+    const input2 = document.getElementById("InputTrianguloBase");
+    const base = input2.value;
+
+    const perimetro = perimetroTriangulo(value,base);
+
+    alert(perimetro)
+}
+
+
+function calcularAreaTriangulo(){
+    const input1 = document.getElementById("InputTriangulo");
+    const lado = input1.value;
+    const input2 = document.getElementById("InputTrianguloBase");
+    const base = input2.value;
+
+    const input3 = document.getElementById("InputTrianguloAltura");
+    const altura = input3.value;
+
+    const perimetro = areaTriangulo(lado,base,altura);
+
+    alert(perimetro)
+}
+
+function perimetroTriangulo(ladoTriangulo1,ladoBase){
+    var mult = ladoTriangulo1 * ladoTriangulo1;
+    return  Number(mult) + Number(ladoBase);
+}
+
+
+function areaTriangulo(ladoTriangulo1, ladoBase, alturaTriangulo){return (ladoBase * alturaTriangulo) / 2;}
