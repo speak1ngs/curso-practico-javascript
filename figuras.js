@@ -1,7 +1,7 @@
 // Codigo del cuadrado
 
 //console.group agrupo mensajes
-console.group("Cuadrados")
+// console.group("Cuadrados")
 /*
 var calculoFigura = prompt("Ingrese una figura si desea calcular o 0 para finalizar");
 while(calculoFigura !=0){
@@ -142,7 +142,7 @@ console.groupEnd();
 // Aqui interanctuamos con el HTML
   
 // cuadrado
-function perimetroCuadrado(ladosCuadrado){ 
+/*function perimetroCuadrado(ladosCuadrado){ 
     return ladosCuadrado * 4 ;
 }
 
@@ -201,4 +201,19 @@ function perimetroTriangulo(ladoTriangulo1,ladoBase){
 }
 
 
-function areaTriangulo(ladoTriangulo1, ladoBase, alturaTriangulo){return (ladoBase * alturaTriangulo) / 2;}
+function areaTriangulo(ladoTriangulo1, ladoBase, alturaTriangulo){return (ladoBase * alturaTriangulo) / 2;}*/
+/*
+function verificacionIsoceles(ladoA,ladoB,base){
+    if(ladoA===ladoB &&  ladoA!=base){
+        console.log("corresponde un triangulo isoceles");
+        
+        calcularAltura =Math.sqrt( Math.pow(ladoA,2)-(Math.pow(base,2)/4));
+
+        console.log("La altura de es: " + calcularAltura);
+    }
+    else{
+        console.log("No corresponde a un Triangulo Isoceles");
+    }
+}
+
+verificacionIsoceles(4,5,6);*/
